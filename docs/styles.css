@@ -1,0 +1,143 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+nav{
+    text-align: center;
+    color: white;
+    font-size: 96px;
+    text-shadow: 5px -2px 2px #708A66;
+
+    .title{
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+.arrow{
+    position: relative;
+    bottom: -2rem;
+    left: 50%;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+.bounce{
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+
+/* Layout voor tekst en afbeelding naast elkaar */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-top: 100px;
+}
+
+.blok {
+    flex: 1 1 25%; /* Zorgt ervoor dat de blokken naast elkaar staan en schalen */
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(141, 141, 141, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    color: white;
+}
+
+.blok:hover{
+    transform: scale(1.1);
+}
+
+.blok img {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.blok a {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(112, 138, 102, 0.8) 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition-duration: .4s;
+    color: #ffffff;
+    text-align: right;
+    justify-content: right;
+    border: 2px solid #ffffff;
+}
+
+.blok a:is(:hover, :focus-visible){
+    outline: none;
+    background-position: bottom;
+    color: #ffffff;
+    border: 2px solid #708A66;
+}
+
+a{
+    border: 2px solid #708A66;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Verberg het nieuwe blok standaard */
+.hidden-block {
+    display: none;
+}
+
+/* Toon het nieuwe blok wanneer het target is */
+#new-block:target {
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+    .blok {
+        flex-basis: 100%; /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
+    }
+}
+
+footer{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
