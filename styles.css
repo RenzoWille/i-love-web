@@ -13,6 +13,7 @@ video {
     top: 0;
     left: 0;
     z-index: -1; /* Ensure video is behind other content */
+
 }
 
 /* Hamburger Menu */
@@ -21,8 +22,8 @@ video {
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: white;
-    text-shadow: 3px -1px 2px #708A66;
+    color: #ffe600;
+    /* text-shadow: 3px -1px 2px #708A66; */
     cursor: pointer;
     z-index: 10; /* Zorg dat het menu-icon bovenop de video staat */
 }
@@ -60,8 +61,8 @@ video {
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 96px;
+    color: #ffe600;
+    font-size: calc(1rem + 8vw);    
     transition: color 0.3s;
 }
 
@@ -71,11 +72,13 @@ video {
 
 
 nav{
-    color: white;
+    /* color: white; */
+    color: #ffe600;
     font-size: calc(1rem + 10vw);
     line-height: 1;
     margin: 0;
-    text-shadow: 5px -2px 2px #708A66;
+    /* text-shadow: 5px -2px 2px #ffdd00; */
+    /* text-shadow: 5px -2px 2px #708A66; */
 
     .title{
         text-align: left;
@@ -87,11 +90,14 @@ nav{
         text-align: right;
         padding-right: 50px;
         padding-bottom: 0px;
+        text-shadow: none;
     }
 
     .subtitle{
+        max-width: 80%;
         text-align: left;
         padding-left: 50px;
+        font-size: calc(1rem + 7vw);    
     }
 
 }
