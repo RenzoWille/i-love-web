@@ -75,7 +75,7 @@ video {
 .menu ul li a {
     text-decoration: none;
     color: #ffe600;
-    font-size: calc(1rem + 6vw);    
+    font-size: calc(1rem + 8vw);    
     transition: color 0.3s;
 }
 
