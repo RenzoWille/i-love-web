@@ -188,3 +188,11 @@ h1{
         flex-basis: 100%; /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
     }
 }
+
+footer{
+    color: #ffe600;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
