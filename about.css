@@ -1,0 +1,119 @@
+body { 
+    font-family: "Inter", arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+video {
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ffe600;
+    /* text-shadow: 3px -1px 2px #708A66; */
+    cursor: pointer;
+    z-index: 10; /* Zorg dat het menu-icon bovenop de video staat */
+}
+
+/* Verborgen menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 138, 102, 0.92);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 9; /* Onder het hamburger-menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu.open {
+    transform: translateX(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffe600;
+    font-size: calc(1rem + 8vw);    
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #1d490b;
+}
+
+nav{
+    color: #ffe600;
+    font-size: calc(1rem + 10vw);
+    line-height: 1;
+    margin: 0;
+    /* text-shadow: 5px -2px 2px #ffdd00; */
+    /* text-shadow: 5px -2px 2px #708A66; */
+
+    .title{
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .profession{
+        font-size: 18px;
+        text-align: right;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        text-shadow: none;
+    }
+
+    .subtitle{
+        max-width: 80%;
+        text-align: left;
+        padding-left: 50px;
+        font-size: calc(1rem + 7vw);    
+    }
+
+    .back-home {
+        color: #ffe600;
+        padding-left: 40px;
+        margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
+        display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 18px;    
+    }
+    
+    .back-home:hover{
+        transform: scale(1.1);
+    }
+}
+
+footer {
+    color: #ffe600;
+    padding-right: 50px;
+    text-align: right;
+    font-size: 16px;
+}

@@ -14,21 +14,6 @@ video {
     z-index: -1; /* Ensure video is behind other content */
 }
 
-.back-home {
-    color: #ffe600;
-    padding-left: 40px;
-    margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
-    display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
-    text-decoration: none;
-    transition: transform 0.4s ease-in-out;
-}
-
-.back-home:hover{
-    transform: scale(1.1);
-}
-
-
-
 /* Hamburger Menu */
 .hamburger {
     position: fixed;
@@ -84,15 +69,34 @@ video {
 }
 
 
-h1{
+nav{
     color: #ffe600;
     font-size: calc(1rem + 10vw);
     line-height: 1;
     margin: 0;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 50px;
-    max-width: 80%;
+    /* text-shadow: 5px -2px 2px #ffdd00; */
+    /* text-shadow: 5px -2px 2px #708A66; */
+
+    .title{
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .back-home {
+        color: #ffe600;
+        padding-left: 40px;
+        margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
+        display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        text-decoration: none;
+        transition: transform 0.4s ease-in-out;
+        font-size: 18px;    
+    }
+    
+    .back-home:hover{
+        transform: scale(1.1);
+    }
+
+
 }
 
 /* Layout voor tekst en afbeelding naast elkaar */
