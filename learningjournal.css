@@ -190,8 +190,7 @@ h1{
 
 footer{
     color: #ffe600;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
+    padding-right: 50px;
+    text-align: right;
     font-size: 18px;
 }
