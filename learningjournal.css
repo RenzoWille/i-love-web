@@ -1,3 +1,101 @@
+body { 
+    font-family: "Inter", arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #708A66;
+}
+
+video {
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+.back-home {
+    color: #ffe600;
+    padding-left: 40px;
+    margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
+    display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+    text-decoration: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.back-home:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Hamburger Menu */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ffe600;
+    /* text-shadow: 3px -1px 2px #708A66; */
+    cursor: pointer;
+    z-index: 10; /* Zorg dat het menu-icon bovenop de video staat */
+}
+
+/* Verborgen menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 138, 102, 0.92);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 9; /* Onder het hamburger-menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu.open {
+    transform: translateX(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffe600;
+    font-size: calc(1rem + 6vw);    
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #1d490b;
+}
+
+
+h1{
+    color: #ffe600;
+    font-size: calc(1rem + 10vw);
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    max-width: 80%;
+}
+
 /* Layout voor tekst en afbeelding naast elkaar */
 .container {
     display: flex;
@@ -24,6 +122,10 @@
     transform: scale(1.1);
 }
 
+.blok h2{
+    color: #ffe600;
+}
+
 .blok img {
     max-width: 75%;
     height: auto;
@@ -32,6 +134,14 @@
     border-radius: 10px;
     align-items: center;
     padding-top: 5px;
+}
+
+.blok p{
+    text-align: left;
+}
+
+.blok li{
+    text-align: left;
 }
 
 .blok a {
@@ -43,19 +153,19 @@
     text-align: right;
     justify-content: right;
     border: 2px solid #ffffff;
+    margin: 5px 0; /* Voeg verticale ruimte tussen de knoppen toe */
+    text-decoration: none;
+    border: 2px solid #708A66;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-block; /* Zorg dat de knoppen netjes onder elkaar staan */
 }
 
-.blok a:is(:hover, :focus-visible){
+.blok a:is(:hover, :focus-visible) {
     outline: none;
     background-position: bottom;
     color: #ffffff;
     border: 2px solid #708A66;
-}
-
-a{
-    border: 2px solid #708A66;
-    border-radius: 20px;
-    padding: 5px 15px;
 }
 
 /* Verberg het nieuwe blok standaard */
