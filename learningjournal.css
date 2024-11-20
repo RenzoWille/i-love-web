@@ -74,17 +74,16 @@ nav{
     font-size: calc(1rem + 10vw);
     line-height: 1;
     margin: 0;
+    padding-left: 50px;
     /* text-shadow: 5px -2px 2px #ffdd00; */
     /* text-shadow: 5px -2px 2px #708A66; */
 
     .title{
         text-align: left;
-        padding-left: 50px;
     }
 
     .back-home {
         color: #ffe600;
-        padding-left: 40px;
         margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
         display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
         text-decoration: none;
