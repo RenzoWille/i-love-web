@@ -71,7 +71,6 @@ video {
 
 nav{
     color: #ffe600;
-    font-size: calc(1rem + 10vw);
     line-height: 1;
     margin: 0;
     padding-left: 50px;
@@ -79,6 +78,7 @@ nav{
     /* text-shadow: 5px -2px 2px #708A66; */
 
     .title{
+        font-size: calc(1rem + 10vw);
         text-align: left;
     }
 
