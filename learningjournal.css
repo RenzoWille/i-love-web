@@ -40,28 +40,28 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    ul li {
+        margin: 20px 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #ffe600;
+        font-size: calc(1rem + 8vw);    
+        transition: color 0.3s;
+    }
 }
 
 .menu.open {
     transform: translateX(0);
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.menu ul li {
-    margin: 20px 0;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #ffe600;
-    font-size: calc(1rem + 8vw);    
-    transition: color 0.3s;
 }
 
 .menu ul li a:hover {
@@ -118,49 +118,49 @@ nav{
     text-align: center;
     transition: transform 0.4s ease-in-out;
     color: white;
+
+    h2{
+        color: #ffe600;
+    }
+
+    img {
+        max-width: 75%;
+        height: auto;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 10px;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    li{
+        text-align: left;
+    }
+
+    a {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(112, 138, 102, 0.8) 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition-duration: .4s;
+        color: #ffffff;
+        text-align: right;
+        justify-content: right;
+        border: 2px solid #ffffff;
+        margin: 5px 0; /* Voeg verticale ruimte tussen de knoppen toe */
+        text-decoration: none;
+        border: 2px solid #708A66;
+        border-radius: 20px;
+        padding: 5px 15px;
+        display: inline-block; /* Zorg dat de knoppen netjes onder elkaar staan */
+    }
 }
 
 .blok:hover{
     transform: scale(1.1);
-}
-
-.blok h2{
-    color: #ffe600;
-}
-
-.blok img {
-    max-width: 75%;
-    height: auto;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 10px;
-    align-items: center;
-    padding-top: 5px;
-}
-
-.blok p{
-    text-align: left;
-}
-
-.blok li{
-    text-align: left;
-}
-
-.blok a {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(112, 138, 102, 0.8) 50%);
-    background-size: 100% 200%;
-    background-position: top;
-    transition-duration: .4s;
-    color: #ffffff;
-    text-align: right;
-    justify-content: right;
-    border: 2px solid #ffffff;
-    margin: 5px 0; /* Voeg verticale ruimte tussen de knoppen toe */
-    text-decoration: none;
-    border: 2px solid #708A66;
-    border-radius: 20px;
-    padding: 5px 15px;
-    display: inline-block; /* Zorg dat de knoppen netjes onder elkaar staan */
 }
 
 .blok a:is(:hover, :focus-visible) {
