@@ -1,67 +1,6 @@
-body { 
-    font-family: "Inter", arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-}
-
-video {
-    object-fit: cover; 
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensure video is behind other content */
-}
-
-/* Hamburger Menu */
-.hamburger {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: #ffe600;
-    /* text-shadow: 3px -1px 2px #708A66; */
-    cursor: pointer;
-    z-index: 10; /* Zorg dat het menu-icon bovenop de video staat */
-}
-
 /* Verborgen menu */
 .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(112, 138, 102, 0.92);
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in-out;
-    z-index: 9; /* Onder het hamburger-menu */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-
-    ul li {
-        margin: 20px 0;
-    }
-
-    ul li a {
-        text-decoration: none;
-        color: #ffe600;
-        font-size: calc(1rem + 8vw);    
-        transition: color 0.3s;
-    }
-}
-
-.menu.open {
-    transform: translateX(0);
 }
 
 .menu ul li a:hover {
@@ -69,33 +8,21 @@ video {
 }
 
 
-nav{
-    color: #ffe600;
-    line-height: 1;
-    margin: 0;
-    padding-left: 50px;
-    /* text-shadow: 5px -2px 2px #ffdd00; */
-    /* text-shadow: 5px -2px 2px #708A66; */
-
-    .title{
-        font-size: calc(1rem + 10vw);
-        text-align: left;
-    }
-
+header {
     .back-home {
         color: #ffe600;
-        margin-top: 50px; /* Zorgt voor afstand van de bovenkant van de pagina */
-        display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+        margin-top: 50px;
+        /* Zorgt voor afstand van de bovenkant van de pagina */
+        display: inline-block;
+        /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
         text-decoration: none;
         transition: transform 0.4s ease-in-out;
-        font-size: 18px;    
+        font-size: 18px;
     }
-    
-    .back-home:hover{
+
+    .back-home:hover {
         transform: scale(1.1);
     }
-
-
 }
 
 /* Layout voor tekst en afbeelding naast elkaar */
@@ -108,7 +35,8 @@ nav{
 }
 
 .blok {
-    flex: 1 1 25%; /* Zorgt ervoor dat de blokken naast elkaar staan en schalen */
+    flex: 1 1 25%;
+    /* Zorgt ervoor dat de blokken naast elkaar staan en schalen */
     margin: 10px;
     padding: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
@@ -119,7 +47,7 @@ nav{
     transition: transform 0.4s ease-in-out;
     color: white;
 
-    h2{
+    h2 {
         color: #ffe600;
     }
 
@@ -133,11 +61,11 @@ nav{
         padding-top: 5px;
     }
 
-    p{
+    p {
         text-align: left;
     }
 
-    li{
+    li {
         text-align: left;
     }
 
@@ -150,16 +78,18 @@ nav{
         text-align: right;
         justify-content: right;
         border: 2px solid #ffffff;
-        margin: 5px 0; /* Voeg verticale ruimte tussen de knoppen toe */
+        margin: 5px 0;
+        /* Voeg verticale ruimte tussen de knoppen toe */
         text-decoration: none;
         border: 2px solid #708A66;
         border-radius: 20px;
         padding: 5px 15px;
-        display: inline-block; /* Zorg dat de knoppen netjes onder elkaar staan */
+        display: inline-block;
+        /* Zorg dat de knoppen netjes onder elkaar staan */
     }
 }
 
-.blok:hover{
+.blok:hover {
     transform: scale(1.1);
 }
 
@@ -187,11 +117,12 @@ nav{
 
 @media (max-width: 768px) {
     .blok {
-        flex-basis: 100%; /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
+        flex-basis: 100%;
+        /* Zorgt ervoor dat de blokken onder elkaar worden geplaatst op kleinere schermen */
     }
 }
 
-footer{
+footer {
     color: #ffe600;
     padding-right: 50px;
     text-align: right;
