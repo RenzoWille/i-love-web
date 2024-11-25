@@ -82,11 +82,11 @@ header {
     line-height: 1;
     margin: 0;
     padding-left: 50px;
+    font-size: calc(1rem + 8.5vw);
     /* text-shadow: 5px -2px 2px #ffdd00; */
     /* text-shadow: 5px -2px 2px #708A66; */
 
     .title {
-        font-size: calc(1rem + 10vw);
         text-align: left;
     }
 
