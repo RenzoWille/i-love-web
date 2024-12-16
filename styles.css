@@ -57,9 +57,9 @@ video {
 
 .menu ul {
     list-style: none;
-    padding: 0;
+    padding-right: 50px;
     margin: 0;
-    text-align: center;
+    text-align: right;
 }
 
 .menu ul li {
