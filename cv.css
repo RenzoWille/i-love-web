@@ -1,6 +1,73 @@
 body{
+    font-family: "Inter", arial, sans-serif;
     background-color: rgba(112, 138, 102);
+    margin: 0 auto;
+    padding: 0;
+    color: #ffe600;
 }
 
+
+header {
+    line-height: 1;
+    margin: 0;
+    padding-left: 50px;
+    font-size: calc(1rem + 6vw);
+    /* text-shadow: 5px -2px 2px #ffdd00; */
+    /* text-shadow: 5px -2px 2px #708A66; */
+
+    .title {
+        text-align: left;
+    }
+
+    .profession {
+        font-size: 18px;
+        text-align: right;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        text-shadow: none;
+    }
+}
+
+main{
+
+    ul{
+        list-style: none;
+    }
+
+    .personal-information{
+        padding-left: 50px;
+        padding-right: 52.5%;
+    }
+
+    .about-me{
+        padding-right: 50px;
+        padding-left: 52.5%;
+    }
+
+    .education{
+        padding-left: 50px;
+        padding-right: 52.5%;
+    }
+
+    .languages{
+        padding-right: 50px;
+        padding-left: 52.5%;
+    }
+
+    .skills{
+        padding-left: 50px;
+        padding-right: 52.5%;
+    }
+
+    .digital-skills{
+        padding-right: 50px;
+        padding-left: 52.5%;
+    }
+
+    .work-experience{
+        padding-left: 50px;
+        padding-right: 52.5%;
+    }
+}
 
 
