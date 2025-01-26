@@ -82,10 +82,7 @@ header {
     color: #ffe600;
     line-height: 1;
     margin: 0;
-    /* padding-left: 50px; */
     font-size: calc(1rem + 8.5vw);
-    /* text-shadow: 5px -2px 2px #ffdd00; */
-    /* text-shadow: 5px -2px 2px #708A66; */
 
     .title {
         text-align: left;
@@ -94,7 +91,6 @@ header {
     .profession {
         font-size: 18px;
         text-align: right;
-        /* padding-right: 50px; */
         padding-bottom: 0px;
         text-shadow: none;
     }
@@ -107,7 +103,6 @@ header {
     
     .title, .profession{
         width: 100vw;
-        height: 100vh;
     }
 
 }
