@@ -3,6 +3,9 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: black;
+    padding: 20px;
+    color: #ffe600;
+    line-height: 1;
 }
 
 video {
@@ -80,7 +83,6 @@ video {
 
 header {
     color: #ffe600;
-    line-height: 1;
     margin: 0;
     font-size: calc(1rem + 8.5vw);
 
@@ -91,21 +93,101 @@ header {
     .profession {
         font-size: 18px;
         text-align: right;
-        padding-bottom: 0px;
         text-shadow: none;
     }
 
-    .subtitle {
-        max-width: 80%;
-        text-align: left;
-        font-size: calc(1rem + 7vw);
-    }
-    
-    .title, .profession{
-        width: 100vw;
-    }
+    /* .title, .profession{
+        width: 100%;
+    } */
 
 }
+
+.about-me-block {
+    margin: 0;
+    max-width: 80%;
+    text-align: left;
+    font-size: calc(1rem + 6vw);
+}
+
+.socials-block {
+    max-width: 80%;
+
+    h2 {
+        font-size: calc(1rem + 6vw);
+    }
+
+    .socials {
+        display: flex;
+
+        @media (min-width: 1024px){
+            svg{
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .instagram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10em;
+            height: 10em;
+            background: rgba(255, 255, 255, 0.26);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.7px);
+            -webkit-backdrop-filter: blur(3.7px);
+            margin-right: 20px;
+            border: 1px solid #ffe600;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .instagram:hover {
+            transform: scale(1.1);
+        }
+
+        .linkedin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10em;
+            height: 10em;
+            background: rgba(255, 255, 255, 0.26);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.7px);
+            -webkit-backdrop-filter: blur(3.7px);
+            margin-right: 20px;
+            border: 1px solid #ffe600;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .linkedin:hover{
+            transform: scale(1.1);
+        }
+
+        .github {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10em;
+            height: 10em;
+            background: rgba(255, 255, 255, 0.26);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.7px);
+            -webkit-backdrop-filter: blur(3.7px);
+            border: 1px solid #ffe600;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .github:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
 
 /*.arrow{
     position: relative;
