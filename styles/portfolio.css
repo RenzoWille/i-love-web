@@ -1,0 +1,51 @@
+.projects-container {
+    .projects {
+        border: 2px solid;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Linkerkant: tekst, Rechterkant: afbeelding */
+            align-items: center; /* Centreert de inhoud verticaal */
+            gap: 20px; /* Ruimte tussen tekst en afbeelding */
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Zorgt ervoor dat alles verticaal gecentreerd wordt */
+            padding-bottom: 20px;
+
+            a{
+                background-image: linear-gradient(rgba(255, 255, 255, 0.28) 50%, rgba(225, 138, 102, 0.8) 50%);
+                background-size: 100% 200%;
+                transition-duration: .4s;
+                text-align: center;
+                color: #ffffff;                
+                margin: 5px 0;
+                width: 6em;
+                text-decoration: none;
+                border: 2px solid #ffe600;
+                border-radius: 20px;
+                padding: 5px 15px;
+            }
+
+            a:is(:hover, :focus-visible) {
+                outline: none;
+                background-position: bottom;
+                color: #ffffff;
+                border: 2px solid #ffe600;
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            justify-self: end; 
+        }
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio of Renzo Wille, a Frontend Design & Development Student.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/videobg.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../script/script.js"></script>
+    <title>I Love Web</title>
+</head>
+
+<body>
+
+    <button type="button" class="hamburger" id="hamburger">
+        &#9776; <!-- Hamburger icon -->
+    </button>
+
+    <!-- Menu Items -->
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/learningjournal.html">Learning Journal</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <video playsinline autoplay muted loop poster="../images/heroimage.png" id="bgvid">
+        <source src="../videos/herovideo-min.mp4" type="video/mp4">
+    </video>
+
+    <!-- <header>
+        <article class="title">
+            <h1>Get in touch</h1>
+            <p class="profession">
+                <strong>Renzo Alexander Wille <br>'s-Hertogenbosch, The Netherlands</strong>
+            </p>
+        </article>
+    </header> -->
+
+    <main class="contact-section">
+        <div class="contact-section-left">
+            <h1>Got any ideas? Let's team up.</h1>
+            <p>Please tell me more about yourself and what you have in mind.</p>
+
+
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="voornaam">Your name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" placeholder=" " required>
+                    <label for="voornaam">you@yourcompany.com</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="about" name="about" placeholder=" " required>
+                    <label for="voornaam">Please tell me a little bit about the project...</label>
+                </div>
+            </div>
+
+            <div class="contact-form-checkbox">
+                <fieldset>
+                    <legend>How can I help?</legend>
+                    <div>
+                        <input type="checkbox" class="checkbox-left" id="webdesign" name="interest" value="webdesign"/>
+                        <label for="webdesign">Web development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox-left" id="ux-design" name="interest" value="ux-design" />
+                        <label for="ux-design">UX/UI design</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox-left" id="graphic-design" name="interest" value="graphic-design" />
+                        <label for="graphic-design">Graphic design</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox-right" id="marketing" name="interest" value="marketing" />
+                        <label for="marketing">Marketing consulting</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox-right" id="cro" name="interest" value="cro" />
+                        <label for="cro">Conversion Rate Optimization</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox-right" id="other" name="interest" value="other" />
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="contact-form-button">
+                <a href="#">Let's get started!</a>
+            </div>
+        </div>
+
+
+        <div class="contact-section-right">
+            <div class="chat-to-us">
+                <h2>Chat to me</h2>
+                <p>I am here to help!</p>
+                <p>info@growthwedesign.nl</p>
+            </div>
+
+            <div class="visit-us">
+                <h2>Visit us</h2>
+                <p>Come say hello at out office HQ</p>
+                <p>Korenbloemstraat 3 <br>5262 DV, Vught</p>
+            </div>
+
+            <div class="call-us">
+                <h2>Call us</h2>
+                <p>Mon-Fri from 8am to 5pm</p>
+                <p>+31 6 41 73 64 57</p>
+            </div>
+        </div>
+
+
+
+
+    </main>

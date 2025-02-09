@@ -1,0 +1,37 @@
+/* Verborgen menu */
+.menu {
+    background-color: rgba(86, 152, 170, 0.92);
+
+}
+
+.menu ul li a:hover {
+    color: #0c1859;
+}
+
+.back-home {
+    color: #ffe600;
+    margin-top: 25px;
+    display: inline-block; /* Zorgt dat de margin werkt zoals verwacht bij inline-elementen */
+    text-decoration: none;
+    transition: transform 0.4s ease-in-out;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.back-home:hover {
+    transform: scale(1.1);
+}
+
+.website-link {
+    color: #ffe600;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.website-link:hover {
+    transform: scale(1.1);
+}

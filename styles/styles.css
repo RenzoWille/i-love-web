@@ -52,28 +52,28 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    ul {
+        list-style: none;
+        padding-right: 50px;
+        margin: 0;
+        text-align: right;
+    }
+
+    ul li {
+        margin: 20px 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #ffe600;
+        font-size: calc(1rem + 8vw);
+        transition: color 0.3s;
+    }
 }
 
 .menu.open {
     transform: translateX(0);
-}
-
-.menu ul {
-    list-style: none;
-    padding-right: 50px;
-    margin: 0;
-    text-align: right;
-}
-
-.menu ul li {
-    margin: 20px 0;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #ffe600;
-    font-size: calc(1rem + 8vw);
-    transition: color 0.3s;
 }
 
 .menu ul li a:hover {
