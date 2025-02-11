@@ -13,14 +13,17 @@
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/learningjournal.css">
   <script src="../script/script.js"></script>
+  <script src="../script/scrollvideo.js"></script>
   <title>Learning Journal</title>
 </head>
 
 <body>
 
-  <video playsinline autoplay muted loop poster="../images/heroimage.png" id="bgvid">
-    <source src="../videos/herovideo-min.mp4" type="video/mp4">
-  </video>
+  <div class="scroll-video-container" id="videoContainer">
+    <video playsinline autoplay muted loop poster="../images/heroimage.png" id="bgvid">
+      <source src="../videos/herovideo-min.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <header>
     <a class="back-home" href="https://renzowille.github.io/i-love-web/">&#8592; Back to Home</a>
@@ -548,36 +551,47 @@
       <p>Hoe veel van de 10 experimenten heb je al gemaakt?</p>
       <li>Ik heb vandaag 5 van de 10 experimenten kunnen maken.</li>
 
-      <p>Bij welk gedragscriterium past deze deeltaak en wat moet je nog doen om het te kunnen toevoegen aan Portflow?</p>
-      <li>Deze deeltaak past bij probleem oplossend vermogen, ik moet de deeltaak nog afmaken om deze toe te kunnen voegen aan Portflow.</li>
+      <p>Bij welk gedragscriterium past deze deeltaak en wat moet je nog doen om het te kunnen toevoegen aan Portflow?
+      </p>
+      <li>Deze deeltaak past bij probleem oplossend vermogen, ik moet de deeltaak nog afmaken om deze toe te kunnen
+        voegen aan Portflow.</li>
 
       <p>Welke UI Events kun je nog meer toepassen in de leertaak, voor de opdrachtgever?</p>
-      <li>Ik ben nu bezig met mouse events toe te passen in de leertaak. Misschien dat ik ook nog ergens een keyboard event kan toevoegen.</li>
+      <li>Ik ben nu bezig met mouse events toe te passen in de leertaak. Misschien dat ik ook nog ergens een keyboard
+        event kan toevoegen.</li>
     </article>
 
     <article class="blok">
       <h2>11/12/2024</h2>
       <h3>De 1 Minute Paper ↓</h3>
       <p>Wat heb je vandaag geleerd over HTML? Wat over CSS? En wat over JS?</p>
-      <li>Ik heb vandaag geleerd dat we een required tag toe kunnen voegen in een formulier om zo ervoor te zorgen dat gebruikers vershillende velden verplicht in moeten vullen.</li>
-      <li>Ik heb vandaag geleerd dat ik een :hover tag kan gebruiken op een button om er zo voor te zorgen dat wanneer er over de button gehoverd wordt, deze een andere stijling heeft dan de niet hover state.</li>
-      <li>Ik heb vandaag geleerd dat ik de tekst van een verplicht veld kan bewerken om deze meer te personaliseren.</li>
+      <li>Ik heb vandaag geleerd dat we een required tag toe kunnen voegen in een formulier om zo ervoor te zorgen dat
+        gebruikers vershillende velden verplicht in moeten vullen.</li>
+      <li>Ik heb vandaag geleerd dat ik een :hover tag kan gebruiken op een button om er zo voor te zorgen dat wanneer
+        er over de button gehoverd wordt, deze een andere stijling heeft dan de niet hover state.</li>
+      <li>Ik heb vandaag geleerd dat ik de tekst van een verplicht veld kan bewerken om deze meer te personaliseren.
+      </li>
 
 
       <p>Wat ga je voor vrijdag nog toevoegen aan je micro-interactie voor de opdrachtgever?</p>
-      <li>Voor vrijdag ga ik nog een toevoeging doen aan mijn micro-interactie om ervoor te zorgen dat gebruikers het "functies" menu makkelijk met feedforward ook weer kunnen sluiten. Dit ga ik doen door een kruisje te programmeren in de button wanneer deze is geopend.</li>
+      <li>Voor vrijdag ga ik nog een toevoeging doen aan mijn micro-interactie om ervoor te zorgen dat gebruikers het
+        "functies" menu makkelijk met feedforward ook weer kunnen sluiten. Dit ga ik doen door een kruisje te
+        programmeren in de button wanneer deze is geopend.</li>
 
       <p>Welke functionaliteit wil je vrijdag laten testen?</p>
-      <li>Ik wil sowieso testen dat mensen de functie elementen kunnen navigeren met een keyboard. Ook wil ik kijken of de button ook weer gesloten kan worden door middel van de navigatie met een keyboard.</li>
+      <li>Ik wil sowieso testen dat mensen de functie elementen kunnen navigeren met een keyboard. Ook wil ik kijken of
+        de button ook weer gesloten kan worden door middel van de navigatie met een keyboard.</li>
     </article>
-    
+
     <article class="blok">
       <h2>16/12/2024</h2>
       <h3>De 1 Minute Paper ↓</h3>
       <p>Wat heb je vandaag geleerd? Noem 3 dingen:</p>
       <li>Ik heb vandaag geleerd wat straatnaambordjes en wegwijzeringen zijn in navigatie op een website.</li>
-      <li>Ik heb vandaag geleerd dat er verschillende icons gebruikt kunnen worden om een hamburger menu na te bootsen.</li>
-      <li>Ik heb vandaag geleerd dat ik nog wat beter gebruik kan maken van feedforward door een hover element toe te voegen aan mijn button.</li>
+      <li>Ik heb vandaag geleerd dat er verschillende icons gebruikt kunnen worden om een hamburger menu na te bootsen.
+      </li>
+      <li>Ik heb vandaag geleerd dat ik nog wat beter gebruik kan maken van feedforward door een hover element toe te
+        voegen aan mijn button.</li>
 
 
       <p>Wat ga je voor vrijdag nog toevoegen aan je micro-interactie voor de opdrachtgever?</p>
@@ -592,17 +606,19 @@
       <li>Meer bewijslast voor het werken in de JS fundamentals.</li>
       <li>Meer bewijslast in het algemeen over het werken met JavaScript.</li>
       <li>Uitgebreider bewijslast beschrijven in Portflow aan de hand van de feedback van Dion.</li>
-      
+
     </article>
 
     <article class="blok">
       <h2>13/1/2025</h2>
       <h3>De 1 Minute Paper ↓</h3>
       <p>Wat heb je vandaag gedaan?</p>
-      <li>Vandaag heb ik een interactie geschetst voor de opdracht voor de opdrachtgever, ik ga een zoekbalk maken waarin de vacatures automatisch gefilterd worden.</li>
+      <li>Vandaag heb ik een interactie geschetst voor de opdracht voor de opdrachtgever, ik ga een zoekbalk maken
+        waarin de vacatures automatisch gefilterd worden.</li>
 
       <p>Wat heb je vandaag geleerd?</p>
-      <li>Ik heb vandaag geleerd hoe ik het beste semantische HTML kan opbouwen door beter gebruik te maken van 'section', 'article', 'aside' en 'header' en 'footer' elementen.</li>
+      <li>Ik heb vandaag geleerd hoe ik het beste semantische HTML kan opbouwen door beter gebruik te maken van
+        'section', 'article', 'aside' en 'header' en 'footer' elementen.</li>
     </article>
 
     <article class="blok">
@@ -630,7 +646,8 @@
       <h2>7/2/2025</h2>
       <h3>De 1 Minute Paper ↓</h3>
       <p>Wat heb je vandaag gedaan?</p>
-      <li>Vandaag hebben we een code en design review gehad en feedback gegeven en gekregen op de visitekaartjes van klasgenoten.</li>
+      <li>Vandaag hebben we een code en design review gehad en feedback gegeven en gekregen op de visitekaartjes van
+        klasgenoten.</li>
 
       <p>Interessante take-aways na het kijken van andermans code.</p>
       <li>grayscale() element</li>
@@ -641,7 +658,8 @@
       <h2>10/2/2025</h2>
       <h3>De 1 Minute Paper ↓</h3>
       <p>Wat heb je vandaag gedaan?</p>
-      <li>Vandaag hebben we groepjes gemaakt voor de squad page, zijn bezig geweest met data op te halen uit de URL en hebben de eerste schetsen gemaakt.</li>
+      <li>Vandaag hebben we groepjes gemaakt voor de squad page, zijn bezig geweest met data op te halen uit de URL en
+        hebben de eerste schetsen gemaakt.</li>
 
       <p>Wat heb ik vandaag geleerd?.</p>
       <li>?sort= in de URL voor de data op te zoeken</li>
