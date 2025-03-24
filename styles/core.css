@@ -1,0 +1,10 @@
+.core-functionality {
+
+    p {
+        background-image: linear-gradient(45deg, #5b5bff, #010165);
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2em;
+    }
+}
