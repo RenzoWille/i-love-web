@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="../styles/core.css">
+    <script src="../script/core.js" defer></script>
 </head>
 
 <body>
@@ -13,6 +14,27 @@
     <div class="core-functionality">
         <p>Frontend Design & Development</p>
     </div>
+
+    <div class="core-button">
+        <button hidden class="paused">
+            
+            <svg class="play" width="32" height="32" viewBox="0 0 32 32">
+                <title>Play</title>
+                <path d="M6 4l20 12-20 12z"></path>
+              </svg>
+              
+              <svg class="stop" width="32" height="32" viewBox="0 0 32 32">
+                <title>Pause</title>
+                <path d="M4 4h10v24h-10zM18 4h10v24h-10z"></path>
+              </svg>
+
+        </button>
+        
+        <audio controls src="https://fdnd.nl/assets/make-websites.mp3" id="myAudio" type="audio"></audio>
+
+    </div>
+
+
 
 
 </body>
