@@ -18,6 +18,7 @@
   "type": "module",
   "homepage": "https://github.com/RenzoWille/i-love-web#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0"
   }
 }

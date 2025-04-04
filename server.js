@@ -5,12 +5,39 @@ import express from 'express'
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
 
+// Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
+import { Liquid } from 'liquidjs';
+
+// Stel Liquid in als 'view engine'
+const engine = new Liquid();
+app.engine('liquid', engine.express()); 
+
+// Stel de map met Liquid templates in
+// Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
+app.set('views', './views')
+
 // Gebruik de map 'public' voor statische bestanden (resources zoals CSS, JavaScript, afbeeldingen en fonts)
 // Bestanden in deze map kunnen dus door de browser gebruikt worden
 app.use(express.static('public'))
 
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({extended: true}))
+
+app.get('/', function (request, response) {
+    response.render('index.liquid')
+})
+
+app.get('/about', function (request, response) {
+    response.render('about.liquid')
+})
+
+app.get('/learning-journal', function (request, response) {
+    response.render('learningjournal.liquid')
+})
+
+app.get('/portfolio', function (request, response) {
+    response.render('portfolio.liquid')
+})
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80

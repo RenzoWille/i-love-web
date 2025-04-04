@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{% render 'partials/head.liquid' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A portfolio of Renzo Wille, a Frontend Design & Development Student.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/learningjournal.css">
-  <script src="../script/script.js"></script>
-  <script src="../script/scrollvideo.js"></script>
-  <title>Learning Journal</title>
-</head>
-
-<body>
 
   <div class="scroll-video-container" id="videoContainer">
     <video playsinline autoplay muted loop poster="../images/heroimage.png" id="bgvid">
@@ -32,19 +14,7 @@
       <a class="jslog" href="../pages/jslog.html">Learn Programming Online &#8594;</a>
   </header>
 
-  <button class="hamburger" id="hamburger">
-    &#9776; <!-- Hamburger icon -->
-  </button>
-
-  <!-- Menu Items -->
-  <nav class="menu" id="menu">
-    <ul>
-      <li><a href="../pages/about.html">About</a></li>
-      <li><a href="../pages/learningjournal.html">Learning Journal</a></li>
-      <li><a href="../pages/portfolio.html">Portfolio</a></li>
-      <li><a href="../pages/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  {% render 'partials/nav.liquid' %}
 
 
   <!-- Content met tekst en afbeeldingen -->
