@@ -16,6 +16,13 @@
 
   {% render 'partials/nav.liquid' %}
 
+  <section>
+    <h2>Mijn artikelen</h2>
+    {% for file in files %}
+        <a href="/learning-journal/{{ file }}">{{ file|slice:0,-3 }}</a>
+    {% endfor %}
+  </section>
+
 
   <!-- Content met tekst en afbeeldingen -->
   <section class="container" lang="nl">
@@ -869,30 +876,74 @@
 
         <li>3.Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js: 3 punten</li>
 
-        <!--  -->
+        <!-- Dit heb ik gedaan door een nieuwe terminal te openen en 'npm install' in te voeren als command. -->
         
         <li>4.Ik kan met commando’s in de terminal een NodeJS project stoppen en starten: 3 punten</li>
+
+        {% comment %} Ik stop een project met 'control C' en ik start een project met 'npm start' {% endcomment %}
+
         <li>5. Ik weet waarom ik mijn NodeJS project regelmatig moet herstarten en kan dit uitleggen: 3 punten</li>
+
+        {% comment %} De reden dat ik mijn NodeJS project regelmatig moet herstarten is omdat als ik in de server werk en daar aanpassingen in maak, moet de server opnieuw ingeladen worden om alle aanpassingen te verwerken. Daarom moet ik hem opstarten, zodat het alles kan verwerken en dan kan ik weer door. {% endcomment %}
+
         <li>6. Ik heb een strategie voor debuggen in NodeJS: 2 punten</li>
+
+        {% comment %} De strategie die ik gebruik is het gebruik maken van 'console.log', hierbij ga ik stap voor stap bij elke regel code kijken wat er gebeurd. {% endcomment %}
+        
         <li>7. Ik kan uitleggen wat Express.js doet en waarom het nodig is om met NodeJS een website te bouwen: 2 punten
         </li>
+        
+        {% comment %} Express.js is een framework voor NodeJS en het hel[t je om een webserver op te bouwen. {% endcomment %}
+
         <li>8. Ik weet wat routes zijn en kan zelf een nieuwe route aanmaken: 3 punten</li>
+
+        {% comment %} Een route is eigenlijk een weg die je aanmaakt naar een nieuwe pagina, hierbij gebruik je 'app.get' en zorg je er dus voor dat dit een linkje is als het ware naar een pagina waar je code voor gaat schrijven. {% endcomment %}
+        
         <li>9. Ik weet wat request en response argumenten zijn in een functie voor het laden van data: 2 punten</li>
+
+        {% comment %} Het gebruiken van request en response is eigenlijk dat je iets opvraagt uit de database en doorgeeft aan de server. {% endcomment %}
+        
         <li>10. Ik heb gebruik gemaakt van een request parameter om specifieke data te laden: 3 punten</li>
+
+        {% comment %} Door 'request.params.id' te gebruiken heb ik ervoor gezorgd dat ik specifieke kunstwerken kon ophalen uit de database. {% endcomment %}
+        
         <li>11. Ik kan uitleggen wat Liquid doet en waarom het nodig is om met Express.js een website te maken: 2 punten
         </li>
+
+        {% comment %} Liquid kan je gebruiken op makkelijk data op te halen uit een database met zo min mogelijk regels code. {% endcomment %}
+        
         <li>12. Ik weet hoe ik data naar Liquid verstuur om dit te gebruiken bij het renderen van een pagina: 3 punten
         </li>
+
+        {% comment %} Het versturen van data in Liquid wordt gedaan met JSON data, hierbij halen we het op en versturen we het weer. {% endcomment %}
+       
         <li>13. Ik weet hoe ik Liquid filters toe kan passen en waar ik kan vinden hoe die werken: 2 punten</li>
+
+        {% comment %} Het toepassen van Liquid filters doe je met '|', zo zet je een spatie tussen de code en kan je filteren op een specifiek command. {% endcomment %}
+        
         <li>14. Ik heb een nieuwe route gemaakt en nieuwe data meegegeven aan een Liquid view: 3 punten</li>
+
+        {% comment %} Ik heb verschillende nieuwe routes gemaakt voor verschillende pagina's en data meegegeven. {% endcomment %}
+
         <li>15. Ik weet waar een foreach loop voor gebruikt wordt en pas het toe in een Liquid view om HTML te renderen:
           2 punten</li>
-        <li>16. Ik kan in Liquid een controle maken waarmee de avatar niet getoond wordt als deze niet in whois.fdnd.nl
+
+          {% comment %} Een foreach loop wordt gebruikt om door elk item in een array te gaan om data te renderen. {% endcomment %}
+       
+          <li>16. Ik kan in Liquid een controle maken waarmee de avatar niet getoond wordt als deze niet in whois.fdnd.nl
           is
           ingevuld: 2 punten</li>
-        <li>17. Ik heb een strategie voor debuggen in Liquid: 2 punten</li>
+
+          {% comment %} Ik heb ervoor gezorgd in de voroge sprints om een andere avatar te laten zien als een student geen avatar had ingesteld in whoisfdnd. {% endcomment %}
+        
+        <li>17. Ik heb een strategie voor debuggen in Liquid: 0 punten</li>
         <li>18. Ik kan data fetchen uit een REST API: 2 punten</li>
+
+        {% comment %} Dit doe ik met 'await fetch' en dan de link erbij van de data die ik moet ophalen. {% endcomment %}
+
         <li>19. Ik snap het verschil tussen HTTP requests van de methodes GET en POST: 2 punten</li>
+
+        {% comment %} De HTTP-methode GET haalt gegevens op van de server, terwijl POST gegevens naar de server stuurt om bijvoorbeeld iets op te slaan. {% endcomment %}
         <li>20. Ik kan data uit een REST API filteren of sorteren: 2 punten</li>
         <li>21. Ik snap wat het async keyword doet in JavaScript code: 1 punt</li>
         <li>22. Ik weet wat het doel is van een try/catch block en kan het gebruiken bij het parsen van JSON: 0 punten
@@ -904,7 +955,7 @@
         <li>25. Ik kan formulier data die is ge-POST door middel van een POST of PATCH HTTP request opslaan in de REST
           API: 2 punten</li>
       </ul>
-      <p><strong>55 punten totaal</strong></p>
+      <p><strong>53 punten totaal</strong></p>
     </article>
 
 

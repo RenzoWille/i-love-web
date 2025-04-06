@@ -8,6 +8,10 @@ const app = express()
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
 
+//Zodat we bestanden en mappen in kunnen lezen
+import { readdir, readFile } from 'node:fs/promises'
+const files = await readdir('content')
+
 // Stel Liquid in als 'view engine'
 const engine = new Liquid();
 app.engine('liquid', engine.express()); 
@@ -32,7 +36,7 @@ app.get('/about', function (request, response) {
 })
 
 app.get('/learning-journal', function (request, response) {
-    response.render('learningjournal.liquid')
+    response.render('learningjournal.liquid', {files: files})
 })
 
 app.get('/portfolio', function (request, response) {
