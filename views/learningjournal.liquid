@@ -8,7 +8,7 @@
   </div>
 
   <header>
-    <a class="back-home" href="https://renzowille.github.io/i-love-web/pages">&#8592; Back to Home</a>
+    <a class="back-home" href="https://i-love-web-gddu.onrender.com">&#8592; Back to Home</a>
     <article class="title">
       <h1>Learning Journal</h1>
       <a class="jslog" href="../pages/jslog.html">Learn Programming Online &#8594;</a>
@@ -16,13 +16,13 @@
 
   {% render 'partials/nav.liquid' %}
 
-  <section>
+  <section class="blok">
     <h2>Mijn artikelen</h2>
     {% for file in files %}
       <a href="/learning-journal/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
   {% endfor %}
 </section>
-{{ files | json }}
+{% comment %} {{ files | json }} {% endcomment %}
   </section>
 
 

@@ -7,6 +7,7 @@ const app = express()
 
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
+import { marked } from 'marked';
 
 //Zodat we bestanden en mappen in kunnen lezen
 import { readdir, readFile } from 'node:fs/promises'
@@ -39,10 +40,17 @@ app.get('/learning-journal', function (request, response) {
     response.render('learningjournal.liquid', {files: files})
 })
 
-app.get('/learning-journal/:slug', async function(request, response) {
+app.get('/learning-journal/:slug', async function (request, response) {
     console.log(request.params.slug)
+
     const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' })
-    response.render('article.liquid')
+    console.log(request.params.slug + '.md')
+
+    const markedContent = marked.parse(fileContents)
+    console.log(marked)
+
+
+    response.render('article.liquid', {fileContents: markedContent})
   })
 
 app.get('/portfolio', function (request, response) {
