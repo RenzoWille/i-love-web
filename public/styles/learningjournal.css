@@ -42,33 +42,34 @@ header {
     
 }
 
+h2 {
+    font-size: 64px;
+}
+
 /* Layout voor tekst en afbeelding naast elkaar */
 .container {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin: 20px;
-    padding-top: 100px;
 }
 
 .blok {
     flex: 1 1 25%;
-    /* Zorgt ervoor dat de blokken naast elkaar staan en schalen */
     margin: 10px;
-    padding: 20px;
+    padding: 50px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(141, 141, 141, 0.8);
     flex-direction: column;
     justify-content: center;
     text-align: center;
     transition: transform 0.4s ease-in-out;
-    color: white;
+    color: #ffe600;
+    text-decoration: none;
+    border: 2px solid #ffe600;
+    border-radius: 10px;
 
-    h2 {
-        color: #ffe600;
-    }
-
-    img {
+    /* img {
         max-width: 75%;
         height: auto;
         justify-content: center;
@@ -96,14 +97,14 @@ header {
         justify-content: right;
         border: 2px solid #ffffff;
         margin: 5px 0;
-        /* Voeg verticale ruimte tussen de knoppen toe */
+
         text-decoration: none;
         border: 2px solid #708A66;
         border-radius: 20px;
         padding: 5px 15px;
         display: inline-block;
-        /* Zorg dat de knoppen netjes onder elkaar staan */
-    }
+
+    } */
 }
 
 .blok:hover {
