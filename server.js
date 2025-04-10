@@ -39,6 +39,12 @@ app.get('/learning-journal', function (request, response) {
     response.render('learningjournal.liquid', {files: files})
 })
 
+app.get('/learning-journal/:slug', async function(request, response) {
+    console.log(req.params.slug)
+    const fileContents = await readFile('content/' + req.params.slug + '.md', { encoding: 'utf8' })
+    res.render('article.liquid')
+  })
+
 app.get('/portfolio', function (request, response) {
     response.render('portfolio.liquid')
 })

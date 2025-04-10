@@ -19,8 +19,10 @@
   <section>
     <h2>Mijn artikelen</h2>
     {% for file in files %}
-        <a href="/learning-journal/{{ file }}">{{ file|slice:0,-3 }}</a>
-    {% endfor %}
+      <a href="/learning-journal/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
+  {% endfor %}
+</section>
+{{ files | json }}
   </section>
 
 
