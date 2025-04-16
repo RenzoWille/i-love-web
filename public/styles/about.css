@@ -1,13 +1,3 @@
-/* Verborgen menu */
-.menu {
-    background-color: rgba(86, 152, 170, 0.92);
-
-}
-
-.menu ul li a:hover {
-    color: #0c1859;
-}
-
 .back-home {
     color: #ffe600;
     margin-top: 25px;
