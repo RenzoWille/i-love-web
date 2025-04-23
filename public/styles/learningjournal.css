@@ -140,6 +140,13 @@ h2 {
     }
 }
 
+.lazy-load {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+}
+
 footer {
     color: #ffe600;
     padding-right: 50px;
