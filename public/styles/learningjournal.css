@@ -68,6 +68,10 @@ h2 {
     text-decoration: none;
     border: 2px solid #ffe600;
     border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 
     /* img {
         max-width: 75%;
@@ -116,6 +120,17 @@ h2 {
     background-position: bottom;
     color: #ffffff;
     border: 2px solid #708A66;
+}
+
+.scroll-fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Verberg het nieuwe blok standaard */
