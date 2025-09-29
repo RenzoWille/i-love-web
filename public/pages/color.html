@@ -1,0 +1,58 @@
+<p class="p-1">Deepskyblue</p>
+
+<p class="p-2">YellowGreen</p>
+
+<p class="p-3">Indianred</p>
+
+<p class="p-4">Cornflowerblue</p>
+
+<button class="btn-1">Custom properties</button>
+
+<style>
+    p {
+        font-family: Inter;
+    }
+
+    .p-1 {
+        color: hsl(195, 100%, 50%);
+    }
+
+    .p-2 {
+        color: hsl(79.74, 60.78%, 50%);
+    }
+
+    .p-3 {
+        color: hsl(0, 53.85%, 58.82%);
+    }
+
+    .p-4 {
+        color: hsl(219.23, 79.17%, 66.67%);
+    }
+
+    .btn-1 {
+        --h: 219.23;
+        --s: 79.17%;
+        --l: 66.67%;
+        --a: 1;
+        background-color: hsl(var(--h) var(--s) var(--l) / var(--a));
+        border: none;
+        border-radius: 2rem;
+        padding: .5rem 1rem;
+        color: white;
+        
+
+        &:hover {
+            --l: 75%;
+        }
+
+        &:focus, &:active {
+            --s: 75%;
+        }
+
+        &[disabled] {
+            --s: 0%;
+            --a: 0.5;
+        }
+
+    }
+</style>
