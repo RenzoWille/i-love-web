@@ -22,7 +22,7 @@ video {
 header {
     color: #ffe600;
     margin: 0;
-    font-size: calc(1rem + 8.5vw);
+    font-size: calc(.7rem + 7vw);
 
     .title {
         text-align: left;
