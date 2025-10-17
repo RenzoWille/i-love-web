@@ -1,4 +1,140 @@
 <h1>UX van HTML</h1>
 
 <h2 id="links">Links</h2>
-<a href="ux.html" download>UX van HTML</a>
+<a href="ux.html" target="_blank">UX van HTML</a>
+
+<button>Knop</button>
+
+<a href="www.apple.com" target="_blank">Apple website</a>
+<a href="www.moncler.com" target="_blank">Moncler website</a>
+<a href="www.nike.com" target="_blank">Nike website</a>
+<a href="www.adidas.com" target="_blank">Adidas website</a>
+
+
+<a href="#links">Back to links</a>
+
+<h2 id="afbeeldingen">Afbeeldingen</h2>
+
+<a href="ux.html"><img alt="UX van HTML" width="200" height="100"></a>
+
+<a href="ux.html"><img alt="">UX van HTML</a>
+
+<h2 id="labels">Labels</h2>
+<fieldset>
+    <legend>Docenten</legend>
+    <ul>
+        <li><label><input type="checkbox"> Cyd</label></li>
+        <li><label><input type="checkbox"> Dorien</label></li>
+        <li><label><input type="checkbox"> Gwen</label></li>
+        <li><label><input type="checkbox"> Jad</label></li>
+        <li><label><input type="checkbox"> Joost</label></li>
+        <li><label><input type="checkbox"> Justus</label></li>
+        <li><label><input type="checkbox"> Koop</label></li>
+        <li><label><input type="checkbox"> Krijn</label></li>
+        <li><label><input type="checkbox"> Sanne</label></li>
+        <li><label><input type="checkbox"> Suus</label></li>
+    </ul>
+</fieldset>
+
+
+<fieldset>
+    <legend>Adresgegevens</legend>
+    <p>Straat: <input type="text"></p>
+    <p>Huisnummer: <input type="text"></p>
+    <p>Postcode: <input type="text"></p>
+    <p>Plaats: <input type="text"></p>
+</fieldset>
+
+<h2 id="details">Details</h2>
+
+<details>
+    <summary>Meer info</summary>
+    <p>Deze informatie krijg je pas later te zien.</p>
+    <p>Kan handig zijn.</p>
+</details>
+
+<details name="faq">
+    <summary>Moet ik al kunnen coderen?</summary>
+    <p>Nee, je hebt helemaal geen voorkennis nodig om te beginnen aan deze opleiding, we kunnen je alles leren! Als je
+        wel al voorkennis hebt, is dat alleen maar goed, dan kunnen we je helpen je skills te verbeteren en te verdiepen
+        in de stof.</p>
+</details>
+<details name="faq">
+    <summary>Wat is frontend development?</summary>
+    <p>Een frontend developer ontwerpt en bouwt websites in HTML, CSS en JavaScript. Deze frontend talen leer je bij
+        ons, je hebt dus geen voorkennis nodig.</p>
+</details>
+<details name="faq">
+    <summary>Hoe werkt deze frontend developer opleiding?</summary>
+    <p>Je richt je tijdens deze tweejarige studie op webdesign, visual interface design en frontend development. Vanaf
+        het begin van de opleiding werk je aan actuele opdrachten van échte opdrachtgevers, en leer je samenwerken in
+        multidisciplinaire teams.</p>
+</details>
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    /* Donkere achtergrond */
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+  
+    /* De pop-up zelf */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 300px;
+      text-align: center;
+    }
+  
+    /* Kruisje rechtsboven */
+    .close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+    }
+  
+    .close:hover {
+      color: #000;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <button onclick="openPopup()">Toon pop-up</button>
+  
+  <div id="overlay" onclick="closePopup()"></div>
+  
+  <div id="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>Hallo!</h3>
+    <p>Dit is een eenvoudige pop-up met een kruisje om te sluiten 😄</p>
+  </div>
+  
+  <script>
+    function openPopup() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+  
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
